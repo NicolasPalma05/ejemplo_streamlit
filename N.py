@@ -5,7 +5,7 @@ Plantilla = {
   'Equipo 2' = 'P2'
 }
 
-select = st.sidebar.selectbox('Plantilla:',list(Plantilla.keys())))
+select = st.sidebar.selectbox('Plantilla:',list(Plantilla.keys()))
 
 if select = 'Equipo 1':
 def a():
