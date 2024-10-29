@@ -1,5 +1,6 @@
 import streamlit as st
 st.title('Manchester City Football Club')
+st.image('equipo.jpg')
 st.sidebar.title('Manchester City')
 st.sidebar.title('Ubicacion')
 st.sidebar.image('reino unido.jpg')
