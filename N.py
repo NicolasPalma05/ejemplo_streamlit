@@ -21,6 +21,6 @@ if select == 'HOME':
   st.sidebar.title('Entrenador')
   st.sidebar.image('guardiola.jpg')
   st.sidebar.text(' Pep Guardiola ')
-elif select == 'Equipo 2':
+elif select == 'Equipo Principal':
   import N2
   N2.Suplentes()
