@@ -7,7 +7,7 @@ Plantilla = {
 
 select = st.sidebar.selectbox('Plantilla:',list(Plantilla.keys()))
 
-if select = 'Equipo 1':
+if select == 'Equipo 1':
   st.title('Manchester City Football Club')
   st.image('equipo.jpg')
   st.sidebar.title('Ubicacion')
@@ -20,6 +20,6 @@ if select = 'Equipo 1':
   st.sidebar.title('Entrenador')
   st.sidebar.image('guardiola.jpg')
   st.sidebar.text(' Pep Guardiola ')
-elif select = 'Equipo 2':
+elif select == 'Equipo 2':
   import N2
   N2.Suplentes()
