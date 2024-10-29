@@ -8,7 +8,7 @@ Plantilla = {
 
 select = st.sidebar.selectbox('Plantilla:',list(Plantilla.keys()))
 
-if select == 'Pagina Principal':
+if select == 'HOME':
   st.title('Manchester City Football Club')
   st.image('equipo.jpg')
   st.sidebar.title('Ubicacion')
