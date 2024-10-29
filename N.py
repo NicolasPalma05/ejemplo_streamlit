@@ -1,7 +1,7 @@
 import streamlit as st
 
 Plantilla = {
-  'Pagina Principal': 'P1',
+  'HOME': 'P1',
   'Equipo Principal': 'P2',
   'Suplentes' : 'P3'
 }
