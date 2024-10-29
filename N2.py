@@ -1,4 +1,5 @@
+import pandas as pd
 import streamlit as st
-
-def Suplentes():
-  st.write('Hola')
+def Suplentes(:
+  city = pd.read_csv('Seasons.csv')
+  st.write(city)
