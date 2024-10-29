@@ -2,7 +2,8 @@ import streamlit as st
 
 Plantilla = {
   'Pagina Principal': 'P1',
-  'Equipo 2': 'P2'
+  'Equipo Principal': 'P2',
+  'Suplentes : P3
 }
 
 select = st.sidebar.selectbox('Plantilla:',list(Plantilla.keys()))
