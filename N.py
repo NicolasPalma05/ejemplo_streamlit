@@ -1,3 +1,5 @@
 import streamlit as st
 
-st.title('hola')
+st.title('Aplicacion')
+st.header('Escribe algo')
+st.sidebar.title('')
