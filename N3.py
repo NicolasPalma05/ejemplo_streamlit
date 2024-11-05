@@ -1,6 +1,8 @@
 import streamlit as st
 from streamlit_echarts import st_echarts
 
+df = pd.read_csv('Seasons.csv')
+
 def grafico():
     pie_data = [
         {"name": row['Jugador'], "value": row['Goles']} 
