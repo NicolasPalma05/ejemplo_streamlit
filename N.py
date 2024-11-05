@@ -3,7 +3,7 @@ import streamlit as st
 Plantilla = {
   'HOME': 'P1',
   'statistics': 'P2',
-  'Suplentes' : 'P3'
+  'Grafico' : 'P3'
 }ect == 'HOME':
   st.title('Manchester City Football Club')
   st.ima
@@ -24,4 +24,6 @@ if selge('equipo.jpg')
 elif select == 'statistics':
   import N2
   N2.Suplentes()
-
+elif select == 'Grafico'
+  import N3
+  N3.gráfico()
