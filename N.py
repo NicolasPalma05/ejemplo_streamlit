@@ -9,7 +9,7 @@ Plantilla = {
 select = st.sidebar.selectbox('Plantilla:',list(Plantilla.keys()))
 
 if select == 'HOME':
-  st.text('WINER UEFA CHAMPIONS LEAGUE 2022/2023')
+  st.title('WINER UEFA CHAMPIONS LEAGUE 2022/2023')
   st.image('City.jpg')
   st.sidebar.title('Ubicacion')
   st.sidebar.image('reino unido.jpg')
