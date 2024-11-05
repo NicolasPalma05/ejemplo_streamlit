@@ -2,7 +2,7 @@ import streamlit as st
 
 Plantilla = {
   'HOME': 'P1',
-  'Equipo Principal': 'P2',
+  'statistics': 'P2',
   'Suplentes' : 'P3'
 }
 
