@@ -1,5 +1,4 @@
 import streamlit as st
-from N2 N3 import Suplentes(), grafico()
 
 Plantilla = {
   'HOME': 'P1',
@@ -22,6 +21,8 @@ if select == 'HOME':
   st.sidebar.image('guardiola.jpg')
   st.sidebar.text(' Pep Guardiola ')
 elif select == 'statistics':
+  import N2
   N2.Suplentes()
 elif select == 'Grafico':
+  import N3
   N3.grafico()
