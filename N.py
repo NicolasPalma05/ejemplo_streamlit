@@ -25,4 +25,4 @@ elif select == 'statistics':
   N2.Suplentes()
 elif select == 'Grafico':
   import N3
-  N3.gráfico()
+  N3.grafico()
