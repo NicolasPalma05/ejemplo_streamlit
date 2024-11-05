@@ -1,5 +1,5 @@
 import streamlit as st
-from N2, N3
+from N2, N3 import Suplentes(), grafico()
 
 Plantilla = {
   'HOME': 'P1',
