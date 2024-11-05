@@ -1,48 +1,35 @@
 import streamlit as st
+import pandas as pd
 from streamlit_echarts import st_echarts
 
-def grafico():
-    
-    df = pd.read_csv('Seasons.csv')
-    print(df)
-    
-    pie_data = [
-        {"name": row['Jugador'], "value": row['Goles']} 
-        for _, row in df.iterrows():
-    ]
-    
-    # Opciones del gráfico de pie
-    options = {
-        "title": {
-            "text": "Goles por Jugador - Manchester City",
-            "subtext": "Estadísticas de goles",
-            "left": "center"
-        },
-        "tooltip": {
-            "trigger": "item",
-            "formatter": "{a} <br/>{b}: {c} ({d}%)"
-        },
-        "legend": {
-            "orient": "vertical",
-            "left": "left",
-            "data": df['Jugador'].tolist()
-        },
-        "series": [
-            {
-                "name": "Goles",
-                "type": "pie",
-                "radius": "50%",
-                "data": pie_data,
-                "emphasis": {
-                    "itemStyle": {
-                        "shadowBlur": 10,
-                        "shadowOffsetX": 0,
-                        "shadowColor": "rgba(0, 0, 0, 0.5)"
-                    }
-                }
-            }
-        ]
-    }
-    
-    # Mostrar el gráfico en Streamlit
-    st_echarts(options=options, height="400px")
+# Cargar el CSV
+df = pd.read_csv('Seasons.csv')
+
+# Mostrar los primeros registros del DataFrame (opcional)
+st.write(df.head())
+
+# Configuración del gráfico: Crear un gráfico de barras para visualizar la cantidad de equipos por temporada
+option = {
+    "tooltip": {
+        "trigger": "item"
+    },
+    "legend": {
+        "data": ['Count of Teams']
+    },
+    "xAxis": {
+        "type": "category",
+        "data": df['season'].tolist()  # Usar las temporadas (columna 'season') para el eje X
+    },
+    "yAxis": {
+        "type": "value"
+    },
+    "series": [{
+        "name": 'Count of Teams',
+        "type": 'bar',
+        "data": df['count_teams'].tolist()  # Usar la cantidad de equipos (columna 'count_teams') para los valores Y
+    }]
+}
+
+# Usar Streamlit para mostrar el gráfico interactivo
+st.title('Gráfico de Cantidad de Equipos por Temporada')
+st_echarts(options=option, height="400px")
