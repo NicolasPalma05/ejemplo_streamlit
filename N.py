@@ -8,7 +8,7 @@ Plantilla = {
 
 select = st.sidebar.selectbox('Plantilla:',list(Plantilla.keys()))
 
-if selge('equipo.jpg')
+if select == 'HOME':
   st.sidebar.title('Ubicacion')
   st.sidebar.image('reino unido.jpg')
   st.sidebar.write('Manchester, Reino Unido')
