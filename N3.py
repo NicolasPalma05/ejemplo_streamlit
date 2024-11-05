@@ -4,7 +4,7 @@ from streamlit_echarts import st_echarts
 def grafico():
     pie_data = [
         {"name": row['Jugador'], "value": row['Goles']} 
-        for _, row in df.iterrows()
+        for _, row in df.iterrows():
     ]
     
     # Opciones del gráfico de pie
