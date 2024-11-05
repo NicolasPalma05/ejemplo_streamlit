@@ -1,5 +1,5 @@
 import streamlit as st
-import N2, N3
+from N2, N3
 
 Plantilla = {
   'HOME': 'P1',
