@@ -22,6 +22,6 @@ if select == 'HOME':
 elif select == 'statistics':
   import N2
   N2.Suplentes()
-elif select == 'Grafico'
+elif select == 'Grafico':
   import N3
   N3.gráfico()
