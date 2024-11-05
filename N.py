@@ -4,13 +4,13 @@ Plantilla = {
   'HOME': 'P1',
   'statistics': 'P2',
   'Suplentes' : 'P3'
-}
+}ect == 'HOME':
+  st.title('Manchester City Football Club')
+  st.ima
 
 select = st.sidebar.selectbox('Plantilla:',list(Plantilla.keys()))
 
-if select == 'HOME':
-  st.title('Manchester City Football Club')
-  st.image('equipo.jpg')
+if selge('equipo.jpg')
   st.sidebar.title('Ubicacion')
   st.sidebar.image('reino unido.jpg')
   st.sidebar.write('Manchester, Reino Unido')
@@ -24,3 +24,4 @@ if select == 'HOME':
 elif select == 'statistics':
   import N2
   N2.Suplentes()
+
