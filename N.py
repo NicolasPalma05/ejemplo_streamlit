@@ -4,6 +4,7 @@ Plantilla = {
   'HOME': 'P1',
   'statistics': 'P2',
   'Grafico': 'P3'
+}
 
 select = st.sidebar.selectbox('Plantilla:',list(Plantilla.keys()))
 
