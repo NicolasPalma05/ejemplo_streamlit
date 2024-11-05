@@ -2,6 +2,7 @@ import streamlit as st
 from streamlit_echarts import st_echarts
 
 df = pd.read_csv('Seasons.csv')
+print(df)
 
 def grafico():
     pie_data = [
