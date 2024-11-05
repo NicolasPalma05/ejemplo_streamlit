@@ -3,7 +3,7 @@ import streamlit as st
 Plantilla = {
   'HOME': 'P1',
   'statistics': 'P2',
-  'Grafico' : 'P3'
+  'Grafico': 'P3'
 }ect == 'HOME':
   st.title('Manchester City Football Club')
   st.ima
