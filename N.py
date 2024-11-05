@@ -13,6 +13,7 @@ if select == 'HOME':
   st.sidebar.image('reino unido.jpg')
   st.sidebar.write('Manchester, Reino Unido')
   st.text('WINER UEFA CHAMPIONS LEAGUE 2022/2023')
+  st.image('Manchester City.avif')
   st.sidebar.title('Estadio')
   st.sidebar.text('Etihad Stadium')
   st.sidebar.image('city.jpg')
