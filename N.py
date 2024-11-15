@@ -49,7 +49,7 @@ with col1:
 
 with col2:
     st.radio(
-        "Set label visibility 👇",
+        "En este grafico puedes ver Los puntods maximos minimos y el promedio",
         ["visible", "hidden", "collapsed"],
         key="visibility",
         label_visibility=st.session_state.visibility,
