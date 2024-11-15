@@ -44,8 +44,9 @@ if "visibility" not in st.session_state:
 col1, col2 = st.columns(2)
 
 with col1:
-    st.checkbox("Disable radio widget", key="disabled")
-    st.checkbox("Orient radio options horizontally", key="horizontal")
+    st.checkbox("Maximo", key="disabled")
+    st.checkbox("Minimo", key="horizontal")
+    st.checkbox('Promedio', key='horizontal')
 
 with col2:
     st.radio(
