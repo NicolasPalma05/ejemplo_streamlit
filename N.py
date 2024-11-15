@@ -48,12 +48,3 @@ with col1:
     st.checkbox("Minimo", key="horizontal")
     st.checkbox('Promedio', key='disabled')
 
-with col2:
-    st.radio(
-        "En este grafico puedes ver Los puntods maximos minimos y el promedio",
-        ["visible", "hidden", "collapsed"],
-        key="visibility",
-        label_visibility=st.session_state.visibility,
-        disabled=st.session_state.disabled,
-        horizontal=st.session_state.horizontal,
-    )
